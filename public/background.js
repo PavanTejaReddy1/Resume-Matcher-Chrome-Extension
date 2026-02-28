@@ -40,7 +40,7 @@ async function callApi(message, sendResponse) {
     }
 
     try {
-        const apiData = await fetch('http://localhost:4000/send', {
+        const apiData = await fetch('https://resume-matcher-backend-production-a84f.up.railway.app/send', {
             method: "POST",
             body: JSON.stringify({ jd: message.discription, base64: storedResume }),
             headers: {
